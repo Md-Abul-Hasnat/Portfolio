@@ -377,10 +377,6 @@ nav .menu-icon {
   transition: 0.5s;
 }
 
-.skills-wrapper article:hover {
-  transform: translateY(-10px);
-}
-
 .skills-wrapper article img {
   width: 130px;
 }
@@ -572,6 +568,11 @@ nav .menu-icon {
   .skills-wrapper {
     width: 90%;
   }
+
+  .skills-wrapper article h2 {
+    font-size: 2rem;
+  }
+
   .bottom h3 {
     font-size: 1.2rem;
   }
@@ -706,6 +707,9 @@ nav .menu-icon {
   .skills-wrapper article img {
     width: 100px;
   }
+  .skills-wrapper article h2 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 550px) {
   .hero-left h1 {
@@ -776,11 +780,18 @@ nav .menu-icon {
     grid-template-columns: 1fr;
     row-gap: 35px;
   }
+  .service-icon img {
+    top: 15px;
+    left: 15px;
+  }
 
   .portfolio-wrapper {
     margin-top: 50px;
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+  .skills-wrapper article h2 {
+    font-size: 1.2rem;
   }
 }
 
@@ -833,5 +844,8 @@ nav .menu-icon {
   }
   .statistics article h2 {
     font-size: 3rem;
+  }
+  .skills-wrapper article h2 {
+    font-size: 0.9rem;
   }
 }

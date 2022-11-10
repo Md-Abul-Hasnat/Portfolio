@@ -473,7 +473,6 @@ nav .menu-icon {
   position: relative;
   width: 100%;
   margin-top: 140px;
-  margin-bottom: 100px;
 }
 
 .portfolio-wrapper {
@@ -540,6 +539,68 @@ nav .menu-icon {
 }
 
 /* =================  portfolio  css end =========================== */
+
+.testimonials {
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.testimonials-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.swiper-slide {
+  margin-bottom: 60px;
+}
+
+.swiper-pagination {
+  color: var(--text-clr);
+}
+
+.testimonials-wrapper article {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials-wrapper article i {
+  font-size: 5rem;
+  color: var(--secondary-clr);
+  margin-bottom: 25px;
+}
+.testimonials-wrapper article p {
+  font-size: 1.4rem;
+  color: var(--text-clr);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.client-detail {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.client-detail img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.client-detail h3 {
+  font-size: 1.5rem;
+  color: var(--text-clr);
+}
+.client-detail h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(184, 183, 183);
+}
+
+/* =================  testimonial  css end =========================== */
 
 @media screen and (max-width: 1020px) {
   .nav-right li a {
@@ -612,6 +673,9 @@ nav .menu-icon {
   .links a {
     padding: 8px 12px;
     font-size: 0.9rem;
+  }
+  .testimonials-wrapper {
+    width: 90%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -792,6 +856,20 @@ nav .menu-icon {
   }
   .skills-wrapper article h2 {
     font-size: 1.2rem;
+  }
+  .testimonials-wrapper article p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .testimonials-wrapper article i {
+    font-size: 3rem;
+  }
+  .client-detail h3 {
+    font-size: 1.2rem;
+  }
+  .client-detail img {
+    width: 50px;
+    height: 50px;
   }
 }
 

@@ -10,6 +10,10 @@
       src="https://kit.fontawesome.com/1156b585b5.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -438,10 +442,124 @@
           </article>
         </div>
       </section>
+
+      <section class="testimonials">
+        <h5 class="sub-heading">Testimonials</h5>
+        <h1 class="main-heading">What Clients Say</h1>
+        <div class="testimonials-wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    numquam deserunt vero alias illo illum totam ipsum delectus
+                    voluptatibus aspernatur odio eius commodi, quae ab! Sequi
+                    eligendi velit minima atque?
+                  </p>
+                  <div class="client-detail">
+                    <img src="./images/client1.jpg" alt="Alan Walker" />
+                    <div class="client-name">
+                      <h3>Alan Walker</h3>
+                      <h5>Web Designer</h5>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    numquam deserunt vero alias illo illum totam ipsum delectus
+                    voluptatibus aspernatur odio eius commodi, quae ab! Sequi
+                    eligendi velit minima atque?
+                  </p>
+                  <div class="client-detail">
+                    <img src="./images/client2.jpg" alt="Alan Walker" />
+                    <div class="client-name">
+                      <h3>Alan Walker</h3>
+                      <h5>Web Developer</h5>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    numquam deserunt vero alias illo illum totam ipsum delectus
+                    voluptatibus aspernatur odio eius commodi, quae ab! Sequi
+                    eligendi velit minima atque?
+                  </p>
+                  <div class="client-detail">
+                    <img src="./images/client3.jpg" alt="Alan Walker" />
+                    <div class="client-name">
+                      <h3>Alan Walker</h3>
+                      <h5>Graphic Designer</h5>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    numquam deserunt vero alias illo illum totam ipsum delectus
+                    voluptatibus aspernatur odio eius commodi, quae ab! Sequi
+                    eligendi velit minima atque?
+                  </p>
+                  <div class="client-detail">
+                    <img src="./images/client4.jpg" alt="Alan Walker" />
+                    <div class="client-name">
+                      <h3>Alan Walker</h3>
+                      <h5>Digital Marketer</h5>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    numquam deserunt vero alias illo illum totam ipsum delectus
+                    voluptatibus aspernatur odio eius commodi, quae ab! Sequi
+                    eligendi velit minima atque?
+                  </p>
+                  <div class="client-detail">
+                    <img src="./images/client5.jpg" alt="Alan Walker" />
+                    <div class="client-name">
+                      <h3>Alan Walker</h3>
+                      <h5>Teacher</h5>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- https://preview.themeforest.net/item/foliox-personal-portfolio-html-template/full_screen_preview/40259962?_ga=2.100201182.1957680678.1667834952-633208275.1663460760 -->
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initializing Swiper -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

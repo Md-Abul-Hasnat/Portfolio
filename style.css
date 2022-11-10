@@ -368,6 +368,7 @@ nav .menu-icon {
 }
 
 .skills-wrapper article {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   background-color: var(--light-bg);
@@ -384,12 +385,35 @@ nav .menu-icon {
   width: 130px;
 }
 
+.skills-wrapper article h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--text-clr);
+  height: 30%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  background-color: var(--secondary-clr);
+  opacity: 0;
+  cursor: default;
+  transition: 0.4s;
+}
+
+.skills-wrapper article:hover > h2 {
+  height: 100%;
+  opacity: 1;
+}
+
 /* =================  skills card css end =========================== */
 
 .services {
   width: 100%;
   margin-top: 150px;
-  margin-bottom: 100px;
   position: relative;
 }
 
@@ -449,6 +473,77 @@ nav .menu-icon {
 
 /* =================  services card css end =========================== */
 
+.portfolio {
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.portfolio-wrapper {
+  margin-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+  row-gap: 30px;
+}
+
+.portfolio-wrapper article {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  box-shadow: 0px 5px 10px black;
+  transition: 0.4s;
+}
+
+.portfolio-wrapper article .top {
+  width: 100%;
+}
+
+.portfolio-wrapper article .top img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.portfolio-wrapper .bottom {
+  margin-top: 15px;
+}
+
+.bottom h3 {
+  font-size: 1.5rem;
+  color: var(--text-clr);
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.bottom p {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: rgb(202, 200, 200);
+}
+
+.bottom .links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: var(--secondary-clr);
+  text-decoration: none;
+  background-color: var(--bg-clr);
+}
+
+.portfolio-wrapper article:hover {
+  transform: scale(1.03);
+}
+
+/* =================  portfolio  css end =========================== */
+
 @media screen and (max-width: 1020px) {
   .nav-right li a {
     margin-left: 25px;
@@ -476,6 +571,12 @@ nav .menu-icon {
   .skills-wrapper {
     width: 90%;
   }
+  .bottom h3 {
+    font-size: 1.2rem;
+  }
+  .portfolio-wrapper article {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 870px) {
@@ -501,6 +602,14 @@ nav .menu-icon {
   }
   .skills-wrapper {
     width: 100%;
+  }
+  .bottom p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -578,6 +687,9 @@ nav .menu-icon {
   .services-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 650px) {
   .main-heading {
@@ -638,6 +750,12 @@ nav .menu-icon {
     top: 15px;
     left: 15px;
   }
+  .portfolio-wrapper article {
+    padding: 15px;
+  }
+  .links a {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -655,8 +773,12 @@ nav .menu-icon {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr;
-
     row-gap: 35px;
+  }
+
+  .portfolio-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 

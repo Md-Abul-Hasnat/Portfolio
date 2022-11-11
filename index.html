@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+
     <script
       src="https://kit.fontawesome.com/1156b585b5.js"
       crossorigin="anonymous"
@@ -343,14 +344,14 @@
                   >Github Repo</a
                 >
                 <a href="https://feedback-ui-bd.netlify.app" target="_blank"
-                  >Live Oreview</a
+                  >Live Preview</a
                 >
               </div>
             </div>
           </article>
           <article>
             <div class="top">
-              <img src="./images/js clock.png" alt="Github Finder" />
+              <img src="./images/github finder.png" alt="Github Finder" />
             </div>
             <div class="bottom">
               <h3>Github Finder App</h3>
@@ -444,6 +445,8 @@
       </section>
 
       <section class="testimonials">
+        <div class="blur-bg-left"></div>
+        <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Testimonials</h5>
         <h1 class="main-heading">What Clients Say</h1>
         <div class="testimonials-wrapper">
@@ -542,6 +545,59 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h5 class="sub-heading">Contact</h5>
+        <h1 class="main-heading">I Want to Hear from You</h1>
+        <div class="contact-wrapper">
+          <div class="contact-left">
+            <article>
+              <div class="icon">
+                <i class="fa-solid fa-location-pin"></i>
+              </div>
+              <div class="detail">
+                <h2>Address</h2>
+                <p>20, Somewhere in world</p>
+              </div>
+            </article>
+            <article>
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="detail">
+                <h2>Email</h2>
+                <p>webdevhasnat@gmail.com</p>
+              </div>
+            </article>
+            <article>
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="detail">
+                <h2>Phone</h2>
+                <p>+123 456 7890</p>
+              </div>
+            </article>
+          </div>
+          <form class="contact-right">
+            <article>
+              <input type="text" placeholder="Your Name" required />
+              <input type="text" placeholder="Your Email" required />
+            </article>
+            <article>
+              <input type="number" placeholder="Your Phone (optional)" />
+              <input type="text" placeholder="Subject" required />
+            </article>
+            <article>
+              <textarea
+                placeholder="Write Your Message Here"
+                required
+              ></textarea>
+            </article>
+            <button class="btn" type="submit">Submit Now</button>
+          </form>
         </div>
       </section>
     </main>

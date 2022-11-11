@@ -665,6 +665,10 @@ nav .menu-icon {
 .contact-right article textarea:focus {
   border-color: rgb(218, 216, 216);
 }
+
+.submit-btn {
+  border: none;
+}
 /* =================  contact  css end =========================== */
 
 .footer {

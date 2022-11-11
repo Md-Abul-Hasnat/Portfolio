@@ -684,6 +684,42 @@ nav .menu-icon {
   margin: 0 2px;
 }
 
+.scroll-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+  visibility: hidden;
+  transform: translateY(90px);
+  transition: 0.8s;
+}
+
+.scroll-up a {
+  text-decoration: none;
+}
+
+.scroll-up i {
+  font-size: 1.4rem;
+  color: var(--text-clr);
+}
+
+.active {
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.scroll-up:hover {
+  transform: translateY(-10px);
+}
+
 /* =================  footer  css end =========================== */
 
 @media screen and (max-width: 1020px) {
@@ -930,6 +966,14 @@ nav .menu-icon {
     flex-direction: column;
     row-gap: 20px;
   }
+  .scroll-up {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-up i {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1025,6 +1069,14 @@ nav .menu-icon {
   }
   .info article p {
     font-size: 0.9rem;
+  }
+  .contact-right article input {
+    padding: 20px 10px;
+    font-size: 1rem;
+  }
+  .contact-right article textarea {
+    padding: 20px 10px;
+    font-size: 1rem;
   }
 
   .skills-wrapper article h2 {

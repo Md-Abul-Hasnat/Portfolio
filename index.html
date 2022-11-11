@@ -7,14 +7,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <!-- linking font awesome -->
     <script
       src="https://kit.fontawesome.com/1156b585b5.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- linking font swiper js -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+
+    <!-- linking font AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
@@ -48,7 +54,7 @@
       </div>
     </nav>
     <div class="scroll-up">
-      <a href="#home">
+      <a href="#">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
     </div>
@@ -56,19 +62,19 @@
       <section id="home" class="hero">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
-        <div class="hero-left">
+        <div data-aos-duration="1000" data-aos="fade-right" class="hero-left">
           <h1>James <span>Smith</span></h1>
           <h3>Front End Web Developer based in Bangladesh</h3>
           <a class="btn" href="#"> Get Connected </a>
         </div>
-        <div class="hero-right">
+        <div data-aos-duration="1000" data-aos="fade-left" class="hero-right">
           <div class="avater">
             <img src="./images/man.png" alt="hero image" />
           </div>
         </div>
       </section>
 
-      <section class="skills-card">
+      <section data-aos-duration="800" data-aos="fade-up" class="skills-card">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <article class="skill-card">
@@ -106,7 +112,11 @@
           Loves To Code
         </h1>
         <div class="about-wrapper">
-          <div class="about-left">
+          <div
+            data-aos-duration="1000"
+            data-aos="fade-right"
+            class="about-left"
+          >
             <div class="my-img">
               <img src="./images/avater.jpg" alt="me" />
             </div>
@@ -114,7 +124,11 @@
               <img src="./images/coding.jpg" alt="coding" />
             </div>
           </div>
-          <div class="about-right">
+          <div
+            data-aos-duration="1000"
+            data-aos="fade-left"
+            class="about-right"
+          >
             <h2 class="about-head">About Me</h2>
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -166,27 +180,43 @@
           Regularly
         </h1>
         <div class="skills-wrapper">
-          <article>
+          <article data-aos="flip-left" data-aos-duration="1000">
             <img src="./images/html.png" alt="html" />
             <h2>HTML</h2>
           </article>
-          <article>
+          <article
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <img src="./images/css.png" alt="css" />
             <h2>CSS</h2>
           </article>
-          <article>
+          <article
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <img src="./images/js.png" alt="js" />
             <h2>JavaScript</h2>
           </article>
-          <article>
+          <article data-aos="flip-left" data-aos-duration="1000">
             <img src="./images/bootstrap.png" alt="bootstrap" />
             <h2>Bootstrap</h2>
           </article>
-          <article>
+          <article
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <img src="./images/react.png" alt="react" />
             <h2>React</h2>
           </article>
-          <article>
+          <article
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <img src="./images/git.png" alt="git" />
             <h2>Git</h2>
           </article>
@@ -199,7 +229,7 @@
         <h5 class="sub-heading">Services</h5>
         <h1 class="main-heading">What I Do for My Clients</h1>
         <div class="services-wrapper">
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/web.png" alt="Web Design" />
             </div>
@@ -211,7 +241,7 @@
               facilis alias provident veniam quod officiis.
             </p>
           </article>
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/pc.png" alt="Responsive Design" />
             </div>
@@ -223,7 +253,7 @@
               facilis alias provident veniam quod officiis.
             </p>
           </article>
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/webDev.png" alt="Web Development" />
             </div>
@@ -235,7 +265,7 @@
               facilis alias provident veniam quod officiis.
             </p>
           </article>
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/seo.png" alt="SEO Website " />
             </div>
@@ -247,7 +277,7 @@
               facilis alias provident veniam quod officiis.
             </p>
           </article>
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/customize.png" alt="customization" />
             </div>
@@ -259,7 +289,7 @@
               facilis alias provident veniam quod officiis.
             </p>
           </article>
-          <article>
+          <article data-aos="zoom-in" data-aos-duration="1000">
             <div class="service-icon">
               <img src="./images/support.png" alt="Support" />
             </div>
@@ -280,7 +310,7 @@
         <h5 class="sub-heading">Portfolio</h5>
         <h1 class="main-heading">My Recent Works</h1>
         <div class="portfolio-wrapper">
-          <article>
+          <article data-aos="fade-up" data-aos-duration="1000">
             <div class="top">
               <img src="./images/foysol portfolio.PNG" alt="foysol portfolio" />
             </div>
@@ -303,7 +333,11 @@
               </div>
             </div>
           </article>
-          <article>
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div class="top">
               <img src="./images/feedback ui.png" alt="Feedback UI" />
             </div>
@@ -326,7 +360,11 @@
               </div>
             </div>
           </article>
-          <article>
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <div class="top">
               <img src="./images/github finder.png" alt="Github Finder" />
             </div>
@@ -349,7 +387,7 @@
               </div>
             </div>
           </article>
-          <article>
+          <article data-aos="fade-up" data-aos-duration="1000">
             <div class="top">
               <img src="./images/country.png" alt="country" />
             </div>
@@ -372,7 +410,11 @@
               </div>
             </div>
           </article>
-          <article>
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div class="top">
               <img src="./images/shop online.PNG" alt="shop online" />
             </div>
@@ -395,7 +437,11 @@
               </div>
             </div>
           </article>
-          <article>
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <div class="top">
               <img src="./images/calender.png" alt="JavaScript Calender" />
             </div>
@@ -421,7 +467,12 @@
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        id="testimonials"
+        class="testimonials"
+      >
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Testimonials</h5>
@@ -525,7 +576,12 @@
         </div>
       </section>
 
-      <section id="Contact" class="contact">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        id="Contact"
+        class="contact"
+      >
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Contact</h5>
@@ -589,8 +645,15 @@
     </footer>
 
     <script src="index.js"></script>
+
+    <!-- linking font AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- linking font swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- Initializing Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,

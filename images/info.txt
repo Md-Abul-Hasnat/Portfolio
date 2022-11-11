@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SquadaOne-Regular
+font link: https://fonts.google.com/specimen/Squada+One
+font author: Joe Prince
+font author site: https://dribbble.com/joeprince
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: Dan Hetteix
+icon designer link: /DHETTEIX
+        
+{"bg":"#003FBA","icon":"#34A1E5","font":"#ffffff","slogan":"#ffffff"}
+      

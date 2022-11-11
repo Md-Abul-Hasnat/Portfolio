@@ -86,8 +86,16 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+.nav-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .nav-left .logo {
-  width: 170px;
+  width: 260px;
+  transform: translateY(10px);
   z-index: 10;
   position: relative;
 }
@@ -679,12 +687,15 @@ nav .menu-icon {
 /* =================  footer  css end =========================== */
 
 @media screen and (max-width: 1020px) {
+  .nav-wrapper {
+    width: 95%;
+  }
   .nav-right li a {
     margin-left: 25px;
     font-size: 1rem;
   }
   .nav-left .logo {
-    width: 150px;
+    width: 200px;
   }
   .hero-left {
     text-align: left;
@@ -970,7 +981,7 @@ nav .menu-icon {
     font-size: 1rem;
   }
   .nav-left .logo {
-    width: 120px;
+    width: 170px;
   }
   nav .menu-icon {
     font-size: 1.3rem;

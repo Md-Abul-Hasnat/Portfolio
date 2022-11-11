@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
   background-color: var(--bg-clr);
 }
 
@@ -207,7 +207,7 @@ nav .menu-icon {
 .blur-bg-right {
   position: absolute;
   bottom: -50px;
-  right: -30px;
+  right: -100px;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -324,34 +324,6 @@ nav .menu-icon {
 }
 
 /* =================  about card css end =========================== */
-
-.statistics {
-  margin-top: 180px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4%;
-}
-.statistics article {
-  background-color: var(--light-bg);
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.statistics article h2 {
-  font-size: 3.5rem;
-  color: var(--secondary-clr);
-}
-.statistics article p {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  color: var(--text-clr);
-  line-height: 1.6;
-}
-
-/* =================  statistics card css end =========================== */
 
 .skills {
   width: 100%;
@@ -608,7 +580,6 @@ nav .menu-icon {
   position: relative;
   width: 100%;
   margin-top: 140px;
-  margin-bottom: 140px;
 }
 
 .contact-wrapper {
@@ -680,9 +651,32 @@ nav .menu-icon {
   background-color: transparent;
   border: 0.5px solid gray;
   font-size: 1.1rem;
+  outline: none;
   color: var(--text-clr);
 }
+.contact-right article textarea:focus {
+  border-color: rgb(218, 216, 216);
+}
 /* =================  contact  css end =========================== */
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  background-color: var(--light-bg);
+}
+
+.footer p {
+  padding: 25px 10px;
+  color: rgb(184, 182, 182);
+}
+
+.footer p i {
+  color: var(--secondary-clr);
+  margin: 0 2px;
+}
+
+/* =================  footer  css end =========================== */
 
 @media screen and (max-width: 1020px) {
   .nav-right li a {
@@ -702,12 +696,7 @@ nav .menu-icon {
     grid-template-columns: 47% 47%;
     gap: 6%;
   }
-  .statistics {
-    gap: 3%;
-  }
-  .statistics article {
-    padding: 20px 10px;
-  }
+
   .skills-wrapper {
     width: 90%;
   }
@@ -738,13 +727,7 @@ nav .menu-icon {
   .about-left .my-img {
     margin: 0 auto;
   }
-  .statistics {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
-  }
-  .statistics article {
-    padding: 20px 30px;
-  }
+
   .skills-wrapper {
     width: 100%;
   }
@@ -902,12 +885,6 @@ nav .menu-icon {
     font-size: 1.6rem;
   }
 
-  .statistics article {
-    padding: 20px;
-  }
-  .statistics article h2 {
-    font-size: 2.5rem;
-  }
   .services-wrapper article h2 {
     font-size: 1rem;
   }
@@ -945,9 +922,6 @@ nav .menu-icon {
 }
 
 @media screen and (max-width: 450px) {
-  .statistics article {
-    padding: 20px 10px;
-  }
   .skills-wrapper {
     margin-top: 50px;
   }
@@ -1005,6 +979,15 @@ nav .menu-icon {
     padding: 8px 20px;
     font-size: 1rem;
   }
+  .blur-bg-left {
+    left: -100px;
+    height: 150px;
+    width: 150px;
+  }
+  .blur-bg-right {
+    height: 150px;
+    width: 150px;
+  }
   .hero-right .avater {
     width: 200px;
     height: 200px;
@@ -1032,17 +1015,12 @@ nav .menu-icon {
   .info article p {
     font-size: 0.9rem;
   }
-  .statistics {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-  .statistics article {
-    padding: 20px 30px;
-  }
-  .statistics article h2 {
-    font-size: 3rem;
-  }
+
   .skills-wrapper article h2 {
+    font-size: 0.9rem;
+  }
+  .footer p {
+    padding: 20px 5px;
     font-size: 0.9rem;
   }
 }

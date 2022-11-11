@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -26,12 +26,12 @@
         </div>
 
         <ul class="nav-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#Contact">Contact</a></li>
           <div class="social-icons">
             <li>
               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -48,7 +48,7 @@
       </div>
     </nav>
     <main class="body-wrapper">
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <div class="hero-left">
@@ -92,7 +92,7 @@
         </article>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">About Me</h5>
@@ -152,34 +152,6 @@
         </div>
       </section>
 
-      <section class="statistics">
-        <article>
-          <h2>30</h2>
-          <p>
-            5 Star <br />
-            Reviews
-          </p>
-        </article>
-        <article>
-          <h2>100</h2>
-          <p>
-            Total <br />
-            Projects
-          </p>
-        </article>
-        <article>
-          <h2>80</h2>
-          <p>
-            Satisfied <br />
-            Clients
-          </p>
-        </article>
-        <article>
-          <h2>7 +</h2>
-          <p>Awards <br />Wins</p>
-        </article>
-      </section>
-
       <section class="skills">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
@@ -216,7 +188,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section id="service" class="services">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Services</h5>
@@ -297,7 +269,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Portfolio</h5>
@@ -444,7 +416,7 @@
         </div>
       </section>
 
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="blur-bg-left"></div>
         <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Testimonials</h5>
@@ -548,7 +520,9 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="Contact" class="contact">
+        <div class="blur-bg-left"></div>
+        <div class="blur-bg-right"></div>
         <h5 class="sub-heading">Contact</h5>
         <h1 class="main-heading">I Want to Hear from You</h1>
         <div class="contact-wrapper">
@@ -602,12 +576,16 @@
       </section>
     </main>
 
-    <!-- https://preview.themeforest.net/item/foliox-personal-portfolio-html-template/full_screen_preview/40259962?_ga=2.100201182.1957680678.1667834952-633208275.1663460760 -->
+    <footer class="footer">
+      <p>
+        Made With <i class="fa-solid fa-heart"></i> By WebDev Hasnat . Sylhet |
+        Bangladesh
+      </p>
+    </footer>
 
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initializing Swiper -->
-
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,

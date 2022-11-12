@@ -1025,6 +1025,9 @@ nav .menu-icon {
 }
 
 @media screen and (max-width: 380px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
   .nav-right li a {
     font-size: 1rem;
   }

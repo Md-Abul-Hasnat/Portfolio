@@ -26,7 +26,6 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--secondary-clr);
-  border-radius: 10px;
 }
 
 .sub-heading {

@@ -187,9 +187,10 @@ nav .menu-icon {
 }
 
 .hero-right .avater {
-  width: 320px;
-  height: 320px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
+  object-fit: cover;
   overflow: hidden;
   display: flex;
   background-color: var(--secondary-clr);
@@ -1050,8 +1051,8 @@ nav .menu-icon {
     width: 150px;
   }
   .hero-right .avater {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
   .skills-card {
     grid-template-columns: 1fr;

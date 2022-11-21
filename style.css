@@ -187,8 +187,8 @@ nav .menu-icon {
 }
 
 .hero-right .avater {
-  width: 340px;
-  height: 340px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
@@ -981,6 +981,16 @@ nav .menu-icon {
 }
 
 @media screen and (max-width: 450px) {
+  .hero-right .avater {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    background-color: var(--secondary-clr);
+    border: 4px solid var(--text-clr);
+  }
   .skills-wrapper {
     margin-top: 50px;
   }

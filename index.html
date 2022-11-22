@@ -71,7 +71,7 @@
         <div data-aos-duration="1000" data-aos="fade-right" class="hero-left">
           <h1>Abul <span>Hasnat</span></h1>
           <h3>Front End Web Developer based in Bangladesh</h3>
-          <a class="btn" href="#"> Get Connected </a>
+          <a class="btn" href="#Contact"> Get Connected </a>
         </div>
         <div data-aos-duration="1000" data-aos="fade-left" class="hero-right">
           <div class="avater">
@@ -119,15 +119,12 @@
         </h1>
         <div class="about-wrapper">
           <div
+            class="about-left"
             data-aos-duration="1000"
             data-aos="fade-right"
-            class="about-left"
           >
             <div class="my-img">
-              <img src="./images/avater.jpg" alt="me" />
-            </div>
-            <div class="coding">
-              <img src="./images/coding.jpg" alt="coding" />
+              <img src="./images/about img.png" alt="me" />
             </div>
           </div>
           <div
@@ -147,25 +144,25 @@
               <div class="info-left">
                 <article>
                   <h3>Name</h3>
-                  <p>James Smith</p>
+                  <p>Abul Hasnat</p>
                 </article>
                 <article>
                   <h3>Email</h3>
-                  <p>hello@gmail.com</p>
+                  <p>Webdevhasnat@gmail.com</p>
                 </article>
                 <article>
                   <h3>Phone</h3>
-                  <p>+123 456 7890</p>
+                  <p>01877528052</p>
                 </article>
               </div>
               <div class="info-right">
                 <article>
-                  <h3>Address</h3>
-                  <p>20, Bordeshi, Dhaka</p>
+                  <h3>Skills</h3>
+                  <p>Html,Css,Js,React</p>
                 </article>
                 <article>
                   <h3>Degree</h3>
-                  <p>Honours</p>
+                  <p>BA. Honours</p>
                 </article>
                 <article>
                   <h3>Freelance</h3>
@@ -173,7 +170,7 @@
                 </article>
               </div>
             </div>
-            <a class="btn" href="#">Contact Me</a>
+            <a class="btn" href="#Contact">Contact Me</a>
           </div>
         </div>
       </section>
@@ -365,6 +362,52 @@
           </article>
           <article>
             <div class="top">
+              <img src="./images/bbss.png" alt="BBSS" />
+            </div>
+            <div class="bottom">
+              <h3>B B S S</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut
+                rem consequatur neque. Recusandae quae, enim perspiciatis
+                sapiente eos quibusdam?
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/Md-Abul-Hasnat/BBSS.git"
+                  target="_blank"
+                  >Github Repo</a
+                >
+                <a href="https://bbssylhet.netlify.app" target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <img src="./images/recipe.png" alt="React Recipe App" />
+            </div>
+            <div class="bottom">
+              <h3>React Recipe App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi, dicta! Iste, facilis. Veritatis excepturi hic
+                similique nostrum necessitatibus, numquam exercitationem.
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/Md-Abul-Hasnat/Dish-Recipe.git"
+                  target="_blank"
+                  >Github Repo</a
+                >
+                <a href="https://recipe-bd.netlify.app/" target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
               <img src="./images/feedback ui.png" alt="Feedback UI" />
             </div>
             <div class="bottom">
@@ -450,52 +493,6 @@
                   >Github Repo</a
                 >
                 <a href="https://shop-online-bd.netlify.app" target="_blank"
-                  >Live Preview</a
-                >
-              </div>
-            </div>
-          </article>
-          <article>
-            <div class="top">
-              <img src="./images/recipe.png" alt="React Recipe App" />
-            </div>
-            <div class="bottom">
-              <h3>React Recipe App</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Excepturi, dicta! Iste, facilis. Veritatis excepturi hic
-                similique nostrum necessitatibus, numquam exercitationem.
-              </p>
-              <div class="links">
-                <a
-                  href="https://github.com/Md-Abul-Hasnat/Dish-Recipe.git"
-                  target="_blank"
-                  >Github Repo</a
-                >
-                <a href="https://recipe-bd.netlify.app/" target="_blank"
-                  >Live Preview</a
-                >
-              </div>
-            </div>
-          </article>
-          <article>
-            <div class="top">
-              <img src="./images/bbss.png" alt="BBSS" />
-            </div>
-            <div class="bottom">
-              <h3>B B S S</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut
-                rem consequatur neque. Recusandae quae, enim perspiciatis
-                sapiente eos quibusdam?
-              </p>
-              <div class="links">
-                <a
-                  href="https://github.com/Md-Abul-Hasnat/BBSS.git"
-                  target="_blank"
-                  >Github Repo</a
-                >
-                <a href="https://bbssylhet.netlify.app" target="_blank"
                   >Live Preview</a
                 >
               </div>
@@ -641,17 +638,36 @@
               </div>
             </article>
           </div>
-          <form class="contact-right">
+          <form
+            action="https://formspree.io/f/xwkzpekz"
+            method="POST"
+            class="contact-right"
+          >
             <article>
-              <input type="text" placeholder="Your Name" required />
-              <input type="text" placeholder="Your Email" required />
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
             </article>
             <article>
-              <input type="number" placeholder="Your Phone (optional)" />
-              <input type="text" placeholder="Subject" required />
+              <input
+                type="number"
+                name="phone"
+                placeholder="Your Phone (optional)"
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
             </article>
             <article>
               <textarea
+                name="message"
                 placeholder="Write Your Message Here"
                 required
               ></textarea>

@@ -269,6 +269,7 @@ nav .menu-icon {
   position: relative;
 }
 .about-wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: 48% 48%;
   gap: 4%;
@@ -289,16 +290,8 @@ nav .menu-icon {
   width: 100%;
 }
 
-.about-left .coding {
-  width: 300px;
-  position: absolute;
-  top: 370px;
-  left: 0px;
-}
-
-.about-left img {
+.about-right {
   width: 100%;
-  border-radius: 10px;
 }
 
 .about-right .about-head {
@@ -1000,6 +993,20 @@ nav .menu-icon {
   .about-left {
     width: 90vw;
   }
+
+  .about-right {
+    width: 90vw;
+  }
+
+  .about-right .about-head {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .about-right p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 }
 @media screen and (max-width: 450px) {
   .hero-right .avater {
@@ -1062,6 +1069,15 @@ nav .menu-icon {
   nav .menu-icon {
     font-size: 1.3rem;
   }
+  .about-right .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info article {
+    padding: 8px 0px;
+  }
+
   .btn {
     padding: 8px 20px;
     font-size: 1rem;

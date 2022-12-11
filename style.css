@@ -198,7 +198,8 @@ nav .menu-icon {
 }
 
 .hero-right img {
-  width: 100%;
+  width: 96%;
+  object-fit: cover;
 }
 
 .blur-bg-left {
@@ -826,6 +827,8 @@ nav .menu-icon {
     display: block;
     color: white;
     font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
   }
   .nav-right {
     position: absolute;
